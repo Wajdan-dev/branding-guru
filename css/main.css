@@ -11323,7 +11323,26 @@ small, .small {
   z-index: 1 !important;
 }
 
+.supply-card{
+  width: 100%;
+  border: 1px solid white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  height: 100%;
+}
+.supply-card h1{
+  font-size: 30px;
+}
+.supply-card h3{
+  font-size: 23px;
+}
 
+.quote h1{
+  font-size: 45px;
+}
 @media(max-width:776px){
   .menu-list{
     display: none; 
