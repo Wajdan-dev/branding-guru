@@ -11402,7 +11402,13 @@ small, .small {
   border: none;
   cursor: pointer;
 }
-
+.agency .agency__thumb img{
+  height: 500px !important;
+}
+.custom-height{
+  height: 600px;
+  overflow: hidden;
+}
 
 @media(max-width:776px){
   .menu-list{
@@ -11421,5 +11427,18 @@ small, .small {
   }
   .hamburger{
     display: block;
+  }
+  .bttn2{
+    display: none !important;
+  }
+  .slick-slide{
+    padding: 0px 10px !important;
+  }
+  .agency .agency__thumb img{
+    height: auto !important;
+  }
+  .custom-height{
+    height: 100%;
+    overflow: hidden;
   }
 }
