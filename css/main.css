@@ -11316,7 +11316,7 @@ small, .small {
 
 .agency .agency__thumb::after{
   background-image: url('../img/assets/4.jpg') !important; 
-  width: 90px !important;
+  width: 108px !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
   left: 0 !important;
