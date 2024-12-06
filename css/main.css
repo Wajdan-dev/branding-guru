@@ -11350,8 +11350,76 @@ small, .small {
 .quote h1{
   font-size: 45px;
 }
+.hamburger{
+  display: none;
+}
+
+/* Hide the mobile menu by default */
+.menus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 35, 83, 1);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%); /* Hidden off-screen */
+}
+
+.menus.active {
+  transform: translateX(0); /* Move into view */
+}
+
+.menus ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menus ul li {
+  margin: 15px 0;
+}
+
+.menus ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
 @media(max-width:776px){
   .menu-list{
     display: none; 
+  }
+  .quote h1{
+    font-size: 27px;
+  }
+  .banner .banner__content-inner .cta{
+    flex-direction:  row !important;
+    justify-content: center;
+  }
+  .banner .banner__content-inner .cta a img{
+    width: 30px;
+    height: auto;
+  }
+  .hamburger{
+    display: block;
   }
 }
