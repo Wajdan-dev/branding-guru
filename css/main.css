@@ -11333,13 +11333,20 @@ small, .small {
   align-items: center;
   height: 100%;
 }
-.supply-card h1{
+.supply-card h1 {
   font-size: 30px;
-}
-.supply-card h3{
-  font-size: 23px;
+  -webkit-text-stroke: 1px white; /* Adds a white stroke */
+  color: transparent; /* Makes the text inside transparent, showing only the stroke */
 }
 
+.supply-card h3 {
+  font-size: 23px;
+  -webkit-text-stroke: 1px white; /* Adjust stroke thickness and color as needed */
+  color: transparent;
+}
+.slick-slide{
+  margin: 0px !important;
+}
 .quote h1{
   font-size: 45px;
 }
