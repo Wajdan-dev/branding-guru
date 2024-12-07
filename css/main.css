@@ -11296,6 +11296,9 @@ small, .small {
   align-items: center;
   list-style: none;
 }
+.menu-list li a{
+  font-size: 25px;
+}
 
 .navItems{
   display: flex;
@@ -11408,6 +11411,48 @@ small, .small {
   width: 80px;
   height: auto;
 }
+
+/* Hamburger and menu styles */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: none; /* Initially hidden */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-nav ul li {
+  margin: 20px 0;
+}
+
+.mobile-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.close-menu {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 @media(max-width:776px){
   .menu-list{
     display: none; 
@@ -11425,6 +11470,12 @@ small, .small {
   }
   .hamburger{
     display: block;
+    position: relative;
+    z-index: 99999;
+  }
+  .header{
+    position: relative;
+    z-index: 99999;
   }
   .bttn2{
     display: none !important;

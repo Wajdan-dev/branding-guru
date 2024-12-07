@@ -132,21 +132,19 @@
                            </ul>
                            <!-- buy now button  -->
                            <a href="#" class="btn btn--secondary bttn2">buy now</a>
-                           <div class="hamburger" id="hamburgerMenus">
-                              <img src="./img/assets/hamburger.png" alt="">
-                           </div>
+
                         </div>
 
-
+                        <a href="#" class="hamburger" id="hamburgerMenus">
+                           <img src="./img/assets/hamburger.png" alt="">
+                        </a>
                      </nav>
                   </div>
                </div>
             </div>
          </div>
       </header>
-
-      <div id="mobileMenu" class="menus hidden">
-         <button id="closeMenu" class="close-button">✕</button>
+      <div id="mobileNavigation" class="mobile-nav">
          <ul>
             <li>
                <a href="#about-section">
@@ -164,7 +162,41 @@
                </a>
             </li>
          </ul>
+         <button id="closeMenu" class="close-menu">Close</button>
       </div>
+
+      <script>
+         document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.getElementById("hamburgerMenus");
+            const mobileNav = document.getElementById("mobileNavigation");
+            const closeMenu = document.getElementById("closeMenu");
+            const navLinks = document.querySelectorAll("#mobileNavigation a");
+
+            // Open the menu when hamburger is clicked
+            hamburger.addEventListener("click", (e) => {
+               e.preventDefault(); // Prevent default link behavior
+               mobileNav.style.display = "flex"; // Show the navigation menu
+            });
+
+            // Close the menu when the close button is clicked
+            closeMenu.addEventListener("click", () => {
+               mobileNav.style.display = "none"; // Hide the navigation menu
+            });
+
+            // Scroll to section and close the menu when a link is clicked
+            navLinks.forEach(link => {
+               link.addEventListener("click", (e) => {
+                  e.preventDefault(); // Prevent default link behavior
+                  const targetSection = document.querySelector(link.getAttribute("href"));
+                  targetSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to section
+                  mobileNav.style.display = "none"; // Hide the navigation menu
+               });
+            });
+         });
+
+
+      </script>
+
       <!-- ==== / header end ==== -->
 
       <!-- ==== offcanvas nav start ==== -->
@@ -354,7 +386,7 @@
                                     "I prefer to be in the grave in Colombia than in jail cell in the United States"
 
                                  </p>
-                                 <div class="cta section__content-cta">
+                                 <div class="cta section__content-cta pt-lg-0 pt-4">
                                     <a href="https://x.com/ElPadrino_SOL">
                                        <img src="./img/assets/twitter.png" alt="">
                                     </a>
@@ -414,7 +446,7 @@
                      <div class="portfolio__text-slider-single">
                         <h2 class="h1">
                            <a href="#">
-                              How to buy
+                              ABOUT $ESCOBAR
 
                               <img src="./img/assets/1.jpg" style=" margin:0px 10px" alt="" class="bulet">
                            </a>
@@ -423,7 +455,7 @@
                      <div class="portfolio__text-slider-single">
                         <h2 class="h1">
                            <a href="#">
-                              How to buy
+                              ABOUT $ESCOBAR
 
                               <img src="./img/assets/1.jpg" style=" margin:0px 10px" alt="" class="bulet">
                            </a>
@@ -432,7 +464,7 @@
                      <div class="portfolio__text-slider-single">
                         <h2 class="h1">
                            <a href="#">
-                              How to buy
+                              ABOUT $ESCOBAR
 
                               <img src="./img/assets/1.jpg" style=" margin:0px 10px" alt="" class="bulet">
                            </a>
@@ -441,7 +473,7 @@
                      <div class="portfolio__text-slider-single">
                         <h2 class="h1">
                            <a href="#">
-                              How to buy
+                              ABOUT $ESCOBAR
 
                               <img src="./img/assets/1.jpg" style=" margin:0px 10px" alt="" class="bulet">
                            </a>
@@ -450,7 +482,7 @@
                      <div class="portfolio__text-slider-single">
                         <h2 class="h1">
                            <a href="#">
-                              How to buy
+                              ABOUT $ESCOBAR
 
                               <img src="./img/assets/1.jpg" style=" margin:0px 10px" alt="" class="bulet">
                            </a>
@@ -459,7 +491,7 @@
                      <div class="portfolio__text-slider-single">
                         <h2 class="h1">
                            <a href="#">
-                              How to buy
+                              ABOUT $ESCOBAR
 
                               <img src="./img/assets/1.jpg" style=" margin:0px 10px" alt="" class="bulet">
                            </a>
@@ -529,7 +561,7 @@
                      <div class="portfolio__text-slider-single">
                         <h2 class="h1">
                            <a href="#">
-                              ABOUT $ESCOBAR
+                              Tokenomics
                               <!-- <img src="./img/assets/1.jpg" style=" margin:0px 10px" alt="" class="bulet"> -->
                               <img src="./img/assets/1.jpg" style=" margin:0px 10px" alt="" class="bulet">
                            </a>
@@ -538,7 +570,7 @@
                      <div class="portfolio__text-slider-single">
                         <h2 class="h1">
                            <a href="#">
-                              ABOUT $ESCOBAR
+                              Tokenomics
 
                               <img src="./img/assets/1.jpg" style=" margin:0px 10px" alt="" class="bulet">
                            </a>
@@ -547,7 +579,7 @@
                      <div class="portfolio__text-slider-single">
                         <h2 class="h1">
                            <a href="#">
-                              ABOUT $ESCOBAR
+                              Tokenomics
 
                               <img src="./img/assets/1.jpg" style=" margin:0px 10px" alt="" class="bulet">
                            </a>
@@ -556,7 +588,7 @@
                      <div class="portfolio__text-slider-single">
                         <h2 class="h1">
                            <a href="#">
-                              ABOUT $ESCOBAR
+                              Tokenomics
 
                               <img src="./img/assets/1.jpg" style=" margin:0px 10px" alt="" class="bulet">
                            </a>
@@ -565,7 +597,7 @@
                      <div class="portfolio__text-slider-single">
                         <h2 class="h1">
                            <a href="#">
-                              ABOUT $ESCOBAR
+                              Tokenomics
 
                               <img src="./img/assets/1.jpg" style=" margin:0px 10px" alt="" class="bulet">
                            </a>
@@ -574,7 +606,7 @@
                      <div class="portfolio__text-slider-single">
                         <h2 class="h1">
                            <a href="#">
-                              ABOUT $ESCOBAR
+                              Tokenomics
 
                               <img src="./img/assets/1.jpg" style=" margin:0px 10px" alt="" class="bulet">
                            </a>
@@ -583,7 +615,7 @@
                      <div class="portfolio__text-slider-single">
                         <h2 class="h1">
                            <a href="#">
-                              ABOUT $ESCOBAR
+                              Tokenomics
 
                               <img src="./img/assets/1.jpg" style=" margin:0px 10px" alt="" class="bulet">
                            </a>
@@ -893,7 +925,7 @@
                      <div class="portfolio__text-slider-single">
                         <h2 class="h1">
                            <a href="#">
-                              tokenomics
+                              How to buy
                               <!-- <img src="./img/assets/1.jpg" style=" margin:0px 10px" alt="" class="bulet"> -->
                               <img src="./img/assets/1.jpg" style=" margin:0px 10px" alt="" class="bulet">
                            </a>
@@ -1029,7 +1061,7 @@
                         </div>
                      </div>
                      <!-- Slider Controls -->
-                     <div class="slide-group justify-content-start">
+                     <div class="slide-group justify-content-start pt-4">
                         <a href="javascript:void(0)" aria-label="previous item"
                            class="slide-btn prev-testimonial-three">
                            <i class="fa-light fa-angle-left"></i>
@@ -1426,21 +1458,7 @@
    <script src="assets/js/main.js"></script>
    <script src="js/vendor.js"></script>
    <script src="js/components.js"></script>
-   <script>
-      const hamburgerMenu = document.getElementById('hamburgerMenus');
-      const mobileMenu = document.getElementById('mobileMenu');
-      const closeMenu = document.getElementById('closeMenu');
 
-      // Toggle the active class to show/hide the menu
-      hamburgerMenu.addEventListener('click', () => {
-         mobileMenu.classList.toggle('active');
-      });
-
-      closeMenu.addEventListener('click', () => {
-         mobileMenu.classList.remove('active');
-      });
-
-   </script>
 </body>
 
 </html>
