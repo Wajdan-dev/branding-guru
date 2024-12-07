@@ -11404,7 +11404,10 @@ small, .small {
 }
  
  
-
+.bulet{
+  width: 80px;
+  height: auto;
+}
 @media(max-width:776px){
   .menu-list{
     display: none; 
@@ -11435,5 +11438,8 @@ small, .small {
   
   .banner-one-thumb{
   display: block !important;
+  }
+  .bulet{
+    width: 40px;
   }
 }
