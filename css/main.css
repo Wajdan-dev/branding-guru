@@ -11441,4 +11441,7 @@ small, .small {
     height: 100%;
     overflow: hidden;
   }
+  .banner-one-thumb{
+  display: block !important;
+  }
 }
