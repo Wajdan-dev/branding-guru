@@ -11299,9 +11299,7 @@ small, .small {
 .menu-list li a{
   font-size: 25px;
 }
-.negatinve{
-  margin-left: -4rem;
-}
+
 .navItems{
   display: flex;
   align-items: center;
@@ -11454,13 +11452,18 @@ small, .small {
   cursor: pointer;
   font-size: 16px;
 }
+@media(min-width:800px){
+  .negatinve{
+    margin-left: -4rem;
+  }
+}
 
 @media(max-width:776px){
   .menu-list{
     display: none; 
   }
   .quote h1{
-    font-size: 27px;
+    font-size: 22px;
   }
   .banner .banner__content-inner .cta{
     flex-direction:  row !important;
@@ -11495,7 +11498,5 @@ small, .small {
   .bulet{
     width: 40px;
   }
-  .negatinve{
-    margin-left: 0;
-  }
+ 
 }
