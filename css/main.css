@@ -11299,7 +11299,9 @@ small, .small {
 .menu-list li a{
   font-size: 25px;
 }
-
+.negatinve{
+  margin-left: -4rem;
+}
 .navItems{
   display: flex;
   align-items: center;
@@ -11492,5 +11494,8 @@ small, .small {
   }
   .bulet{
     width: 40px;
+  }
+  .negatinve{
+    margin-left: 0;
   }
 }
