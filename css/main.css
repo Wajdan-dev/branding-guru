@@ -11452,6 +11452,9 @@ small, .small {
   cursor: pointer;
   font-size: 16px;
 }
+.section{
+  padding: 100px 0px !important;
+}
 @media(min-width:800px){
   .negatinve{
     margin-left: -4rem;
@@ -11500,5 +11503,9 @@ small, .small {
   }
   .section {
     padding: 50px 0px !important;
+}
+.banner{
+  padding: 80px 0px !important;
+
 }
 }
