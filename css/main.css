@@ -13064,6 +13064,10 @@ small,
 .section {
   padding: 60px 0px !important;
 }
+.section-2{
+  padding: 30px 0px !important;
+
+}
 
 @media(min-width:800px) {
   .negatinve {
