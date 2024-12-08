@@ -11498,5 +11498,7 @@ small, .small {
   .bulet{
     width: 40px;
   }
- 
+  .section {
+    padding: 50px 0px !important;
+}
 }
