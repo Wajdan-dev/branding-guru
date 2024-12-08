@@ -13068,7 +13068,9 @@ small,
   padding: 30px 0px !important;
 
 }
-
+.agency{
+  background: transparent !important;
+}
 @media(min-width:800px) {
   .negatinve {
     margin-left: -4rem;
@@ -13134,7 +13136,8 @@ small,
   }
 
   .banner {
-    padding: 80px 0px !important;
+    padding-top: 180px !important;
+    padding-bottom: 30px !important;
 
   }
 
