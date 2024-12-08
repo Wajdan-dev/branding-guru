@@ -13017,6 +13017,7 @@ small,
 .bulet {
   width: 80px;
   height: auto;
+  margin: 0px 15px;
 }
 
 /* Hamburger and menu styles */
@@ -13081,6 +13082,9 @@ small,
   }
 }
 
+.portfolio .portfolio__text-slider{
+  margin-bottom: 0px !important;
+}
 @media(max-width:776px) {
   .menu-list {
     display: none;
@@ -13129,6 +13133,7 @@ small,
 
   .bulet {
     width: 40px;
+    margin: 0px 5px;
   }
 
   .section {
