@@ -11459,6 +11459,9 @@ small, .small {
   .negatinve{
     margin-left: -4rem;
   }
+  .agency__content .paragraph p{
+    font-size: 20px;
+  }
 }
 
 @media(max-width:776px){
